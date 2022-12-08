@@ -9,15 +9,15 @@ using System.Text;
 namespace PumpService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
-    [ServiceContract]
-    public interface IService1
+    [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(IPumpServiceCallback))]
+    public interface IPumpService
     {
 
         [OperationContract]
-        string GetData(int value);
+        string RunScript();
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        CompositeType UpdateAndCompileScript(string fileName);
 
         // TODO: Add your service operations here
     }
