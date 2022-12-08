@@ -12,16 +12,40 @@ namespace PumpService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start
     // debugging.
     [ServiceBehavior(InstanceContextMode =InstanceContextMode.PerSession)]
-    public class PunpService : IPumpService
+    public class PumpService : IPumpService
     {
-        public string RunScript()
+        private readonly IScriptService _scriptService;
+        private readonly IStatisticService _statisticService;
+        private readonly ISettingsService _serviceSettings;
+
+        public PumpService()
         {
-            throw new NotImplementedException();
+            _statisticService = new StatisticService();
+            _serviceSettings = new SettingsService();
+            _scriptService = new ScriptService(Callback, _serviceSettings, _statisticService);
         }
 
-        public CompositeType UpdateAndCompileScript(string fileName)
+        public void RunScript()
         {
-            throw new NotImplementedException();
+            _scriptService.Run(10);
+        }
+
+        public void UpdateAndCompileScript(string fileName)
+        {
+            _serviceSettings.FileName = fileName;
+            _scriptService.Compile();
+        }
+
+  
+        IPumpServiceCallback Callback
+        {
+            get
+            {
+                if (OperationContext.Current != null)
+                    return OperationContext.Current.GetCallbackChannel<IPumpServiceCallback>();
+                else
+                    return null;
+            }
         }
     }
 }
