@@ -8,7 +8,7 @@ namespace PumpService
 {
     internal interface IScriptService
     {
-        void Compile();
+        bool Compile();
 
         void Run(int count);
     }

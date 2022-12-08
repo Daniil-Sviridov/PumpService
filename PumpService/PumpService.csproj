@@ -66,14 +66,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPumpServiceCallback.cs" />
-    <Compile Include="IScriptService.cs" />
-    <Compile Include="ISettingsService.cs" />
-    <Compile Include="IStatisticService.cs" />
+    <Compile Include="Interface\IPumpServiceCallback.cs" />
+    <Compile Include="Interface\IScriptService.cs" />
+    <Compile Include="Interface\ISettingsService.cs" />
+    <Compile Include="Interface\IStatisticService.cs" />
     <Compile Include="PumpService.svc.cs">
       <DependentUpon>PumpService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IPumpService.cs" />
+    <Compile Include="Interface\IPumpService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptService.cs" />
     <Compile Include="SettingsService.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PumpService
 {
-    internal interface IStatisticService
+    public interface IStatisticService
     {
         int SuccessTacts { get; set; }
         int ErrorTacts { get; set;}
