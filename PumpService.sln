@@ -5,6 +5,13 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpService", "PumpService\PumpService.csproj", "{4A12182F-BECF-4E14-8947-D56A0FA541CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpClient", "PumpClient\PumpClient.csproj", "{3F2B45D7-580E-4A45-B697-90211D80F20C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpClientNet", "PumpClientNet\PumpClientNet.csproj", "{F2F029C2-56D0-4FCF-ABBF-3A528A2690D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A12182F-BECF-4E14-8947-D56A0FA541CF} = {4A12182F-BECF-4E14-8947-D56A0FA541CF}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,14 @@ Global
 		{4A12182F-BECF-4E14-8947-D56A0FA541CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A12182F-BECF-4E14-8947-D56A0FA541CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A12182F-BECF-4E14-8947-D56A0FA541CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2B45D7-580E-4A45-B697-90211D80F20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2B45D7-580E-4A45-B697-90211D80F20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2B45D7-580E-4A45-B697-90211D80F20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2B45D7-580E-4A45-B697-90211D80F20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F029C2-56D0-4FCF-ABBF-3A528A2690D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F029C2-56D0-4FCF-ABBF-3A528A2690D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F029C2-56D0-4FCF-ABBF-3A528A2690D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F029C2-56D0-4FCF-ABBF-3A528A2690D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
