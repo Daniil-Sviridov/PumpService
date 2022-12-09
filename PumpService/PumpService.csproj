@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PumpService.svc" />
-    <Content Include="Script\script1.txt" />
+    <Content Include="Script\script1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
