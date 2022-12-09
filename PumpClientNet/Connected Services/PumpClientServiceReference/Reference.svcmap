@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="4fac815e-2822-4660-beeb-956625ce57e4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56735/PumpService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PumpService.disco" MetadataType="Disco" ID="6b3ad4f1-9ce0-4b25-89bd-993ae9f23881" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?disco" />
+    <MetadataFile FileName="PumpService.wsdl" MetadataType="Wsdl" ID="a42ecefe-1880-4002-a94c-5c4562d03c27" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PumpService1.wsdl" MetadataType="Wsdl" ID="d8d09d1c-fa9d-4237-ae16-6d97fe41c4e6" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?wsdl" />
+    <MetadataFile FileName="PumpService.xsd" MetadataType="Schema" ID="66c185e2-9a05-482a-9eb2-7237cef81a33" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PumpService1.xsd" MetadataType="Schema" ID="9d7eed7b-6256-4334-967e-03eae32afcb8" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PumpService2.xsd" MetadataType="Schema" ID="92b79350-185e-4eed-b9e2-d037425ea578" SourceId="1" SourceUrl="http://localhost:56735/PumpService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
